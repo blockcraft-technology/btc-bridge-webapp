@@ -1,7 +1,9 @@
-import { ConfigProvider, Layout, theme } from 'antd'
+import { Col, ConfigProvider, Layout, Row, theme } from 'antd'
 import { Content } from 'antd/es/layout/layout'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
+import { RoutesEnum } from './core/routes.enum'
+import { About, FAQ, Home } from './pages'
 
 const appTheme = {
   algorithm: theme.darkAlgorithm,
@@ -18,7 +20,15 @@ function App() {
         <Layout style={{ padding: 0, minHeight: '100vh' }}>
           <Header />
           <Content>
-            <h1>hi</h1>
+            <Row justify="center">
+            <Col xl={10} lg={10} md={18} sm={24} xs={24} style={{ padding: 15}}>
+                <Routes>
+                  <Route path={RoutesEnum.Home} element={<Home />} />
+                  <Route path={RoutesEnum.About} element={<About />} />
+                  <Route path={RoutesEnum.FAQ} element={<FAQ />} />
+                </Routes>
+              </Col>
+            </Row>
           </Content>
         </Layout>
       </BrowserRouter>
