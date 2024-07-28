@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { RoutesEnum } from './core/routes.enum'
 import { About, FAQ, Home } from './pages'
 import { Web3Provider } from './providers/Web3Provider'
+import { ClientProvider } from './providers/ClientProvider'
 
 const appTheme = {
   algorithm: theme.darkAlgorithm,
@@ -16,26 +17,27 @@ const appTheme = {
 
 function App() {
   return (
-    <Web3Provider>
-      <ConfigProvider theme={appTheme}>
-        <BrowserRouter>
-          <Layout style={{ padding: 0, minHeight: '100vh' }}>
-            <Header />
-            <Content>
-              <Row justify="center">
-              <Col xxl={12} xl={18} lg={20} md={24} sm={24} xs={24} style={{ padding: 15}}>
-                  <Routes>
-                    <Route path={RoutesEnum.Home} element={<Home />} />
-                    <Route path={RoutesEnum.About} element={<About />} />
-                    <Route path={RoutesEnum.FAQ} element={<FAQ />} />
-                  </Routes>
-                </Col>
-              </Row>
-            </Content>
-          </Layout>
-        </BrowserRouter>
-      </ConfigProvider>
-    </Web3Provider>
+    <ClientProvider>
+      <Web3Provider>
+        <ConfigProvider theme={appTheme}>
+          <BrowserRouter>
+            <Layout style={{ padding: 0, minHeight: '100vh' }}>
+              <Header />
+              <Content>
+                <Row justify="center">
+                <Col xxl={12} xl={18} lg={20} md={24} sm={24} xs={24} style={{ padding: 15}}>
+                    <Routes>
+                      <Route path={RoutesEnum.Home} element={<Home />} />
+                      <Route path={RoutesEnum.FAQ} element={<FAQ />} />
+                    </Routes>
+                  </Col>
+                </Row>
+              </Content>
+            </Layout>
+          </BrowserRouter>
+        </ConfigProvider>
+      </Web3Provider>
+    </ClientProvider>
   )
 }
 

@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <Col
             style={{ marginTop: 40 }}
-            xxl={{ span: 18, offset: 3 }}
+            xxl={{ span: 15, offset: 3 }}
             xl={{ span: 18, offset: 3 }}
             lg={{ span: 18, offset: 3 }}
             md={{ span: 24, offset: 0 }}
@@ -28,6 +28,7 @@ export const Home = () => {
                     },
                 ]}
             />
+            
         </Col>
     );
 };
