@@ -42,9 +42,9 @@ export const Home = () => {
     return (
         <Col
             style={{ marginTop: 40}}
-            xxl={{ span: 12, offset: 6 }}
-            xl={{ span: 12, offset: 6 }}
-            lg={{ span: 12, offset: 6 }}
+            xxl={{ span: 18, offset: 3 }}
+            xl={{ span: 18, offset: 3 }}
+            lg={{ span: 18, offset: 3 }}
             md={{ span: 24, offset: 0 }}
             sm={{ span: 24, offset: 0 }}
             xs={{ span: 24, offset: 0 }}
