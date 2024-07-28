@@ -1,13 +1,13 @@
 import { ConfigProvider, Layout, theme } from 'antd'
 import { Content } from 'antd/es/layout/layout'
-import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { Header } from './components/Header'
 
 const appTheme = {
   algorithm: theme.darkAlgorithm,
   token: {
     fontFamily: 'Open Sans',
-    primaryColor: '#000'
+    colorPrimary: '#f7931a',
   }
 }
 
@@ -16,6 +16,7 @@ function App() {
     <ConfigProvider theme={appTheme}>
       <BrowserRouter>
         <Layout style={{ padding: 0, minHeight: '100vh' }}>
+          <Header />
           <Content>
             <h1>hi</h1>
           </Content>
