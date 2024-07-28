@@ -31,9 +31,6 @@ export const Header = () => {
                                 <Menu.Item key="2">
                                     <Link to={RoutesEnum.FAQ}>FAQ</Link>
                                 </Menu.Item>
-                                <Menu.Item key="3">
-                                    <Link to={RoutesEnum.About}>About Project</Link>
-                                </Menu.Item>
                             </>
                         )}
                     </Menu>
