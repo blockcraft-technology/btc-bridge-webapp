@@ -1,5 +1,5 @@
 import { Col, Tabs } from "antd";
-import BitcoinToCore from "../components/BitcoinToCore";
+import BitcoinToCore from "../components/BitcoinToCore/BitcoinToCore";
 import CoreToBitcoin from "../components/CoreToBitcoin";
 
 export const Home = () => {

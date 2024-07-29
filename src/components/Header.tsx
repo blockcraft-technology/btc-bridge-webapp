@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Row, Col, Button, Grid } from 'antd';
-import logo from '../assets/btc-bridge.svg';
+import logo from '../assets/runebridge.svg';
 import { Link } from 'react-router-dom';
 import { RoutesEnum } from '../core/routes.enum';
 import { MenuOutlined } from '@ant-design/icons';
