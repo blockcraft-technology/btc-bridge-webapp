@@ -1,5 +1,6 @@
 export enum RoutesEnum {
-    Home = '/',
+    Landing = '/',
+    Bridge = '/bridge',
     About = '/about',
     FAQ = '/faq',
 

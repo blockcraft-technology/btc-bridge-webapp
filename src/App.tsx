@@ -3,7 +3,7 @@ import { Content } from 'antd/es/layout/layout'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
 import { RoutesEnum } from './core/routes.enum'
-import { FAQ, Home } from './pages'
+import { FAQ, Home, Landing } from './pages'
 import { Web3Provider } from './providers/Web3Provider'
 import { ClientProvider } from './providers/ClientProvider'
 
@@ -27,7 +27,8 @@ function App() {
                 <Row justify="center">
                 <Col xxl={12} xl={18} lg={20} md={24} sm={24} xs={24} style={{ padding: 15}}>
                     <Routes>
-                      <Route path={RoutesEnum.Home} element={<Home />} />
+                      <Route path={RoutesEnum.Landing} element={<Landing />} />
+                      <Route path={RoutesEnum.Bridge} element={<Home />} />
                       <Route path={RoutesEnum.FAQ} element={<FAQ />} />
                     </Routes>
                   </Col>
