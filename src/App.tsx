@@ -3,7 +3,7 @@ import { Content } from 'antd/es/layout/layout'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
 import { RoutesEnum } from './core/routes.enum'
-import { About, FAQ, Home } from './pages'
+import { FAQ, Home } from './pages'
 import { Web3Provider } from './providers/Web3Provider'
 import { ClientProvider } from './providers/ClientProvider'
 

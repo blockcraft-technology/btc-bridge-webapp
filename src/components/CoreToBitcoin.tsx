@@ -1,18 +1,18 @@
-import { Steps, Typography, Button, theme } from "antd";
-import { useState } from "react";
+import { Steps, Typography, theme } from "antd";
+// import { useState } from "react";
 
 const CoreToBitcoin = () => {
-    const [current, setCurrent] = useState(0);
+    //const [current, setCurrent] = useState(0);
     const { token } = theme.useToken();
 
     const steps = [
         {
           title: 'Select wrapped Rune',
-          content: <Typography.Title>Step 1 Placeholder</Typography.Title>,
+          content: <Typography.Title>Work in progress</Typography.Title>,
         },
         {
           title: 'Bridge',
-          content: <Typography.Title>Step 3 Placeholder</Typography.Title>,
+          content: <Typography.Title>Work in progress</Typography.Title>,
         },
     ];
 
@@ -28,18 +28,18 @@ const CoreToBitcoin = () => {
         marginTop: 16,
     };
 
-    const next = () => {
-        setCurrent(current + 1);
-    };
+    // const next = () => {
+    //     setCurrent(current + 1);
+    // };
 
-    const prev = () => {
-        setCurrent(current - 1);
-    };
+    // const prev = () => {
+    //     setCurrent(current - 1);
+    // };
 
     return (
         <>
-            <Steps current={current} items={items} style={{ marginTop: 20 }}/>
-            <div style={contentStyle}>{steps[current].content}</div>
+            <Steps current={0} items={items} style={{ marginTop: 20 }}/>
+            <div style={contentStyle}>{steps[0].content}</div>
         </>
     );
 };

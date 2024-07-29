@@ -1,4 +1,4 @@
-const styles = {
+const styles: any = {
   centeredContainer: {
     display: 'flex',
     flexDirection: 'column',

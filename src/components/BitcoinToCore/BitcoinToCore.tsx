@@ -18,7 +18,7 @@ const BitcoinToCore = () => {
   const { client } = useContext(ClientContext);
   const [current, setCurrent] = useState(0);
   const [transactions, setTransactions] = useState([]);
-  const [sendDetails, setSendDetails] = useState({});
+  const [sendDetails, setSendDetails] = useState<any>({});
   const [bridgeStatus, setBridgeStatus] = useState('');
   const [connectedBitcoinAddress, setConnectedBitcoinAddress] = useState<string | null>(null);
   const [loadingTransactions, setLoadingTransactions] = useState(false);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Layout, Menu, Row, Col, Button, Grid } from 'antd';
 import logo from '../assets/runebridge.svg';
 import { Link } from 'react-router-dom';
